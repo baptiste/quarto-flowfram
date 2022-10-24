@@ -1,0 +1,5 @@
+project:
+  title: "quarto-poster"
+
+pre-render: _import-svg.R
+

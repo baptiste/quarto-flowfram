@@ -1,0 +1,76 @@
+%!TeX program = xelatex
+%!TeX encoding = UTF-8 Unicode
+\documentclass[12pt]{article}
+\usepackage[paperwidth=91mm, paperheight=55mm,margin=0mm]{geometry}
+\usepackage[]{microtype}
+\usepackage{graphicx}
+\DeclareGraphicsExtensions{.pdf,.png,.jpg}
+\usepackage[no-math]{fontspec}
+\defaultfontfeatures{Mapping=tex-text}
+\usepackage{unicode-math}
+\setmainfont[]{Minion 3}
+\setmonofont[Scale=MatchLowercase]{Iosevka Type Slab}
+\setmathfont{TeX Gyre DejaVu Math}[Scale=MatchLowercase]
+\input{_macros.tex}
+
+%%%%%%%%%%%%%%%% whence the frames %%%%%%%%%%%%%%%%%
+\usepackage[final]{flowfram} %final
+\input{_layout.tex}
+\setallstaticframes{valign=t}
+\setstaticframe*{image}{valign=c}
+\setstaticframe*{title}{valign=c}
+\setstaticframe*{author}{valign=c}
+\setstaticframe*{date}{valign=c,angle=90}
+
+% add dummy flow frames to please the package
+\newflowframe[1]{\textwidth}{0pt}{0pt}{0pt}
+\newflowframe[>1]{\textwidth}{\textheight}{0pt}{0pt}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \usepackage{hyperref} % needed for hypertarget
+\usepackage[]{nohyperref}  % This makes hyperref commands do nothing without errors
+\usepackage{url}
+
+% pandoc stuff
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\tightlist{}
+
+
+\begin{document}
+%
+\begin{staticcontents*}{title}
+\titlespecs
+penguin sliding
+\end{staticcontents*}
+
+\begin{staticcontents*}{subtitle}
+\subtitlespecs
+a card not from a random house
+\end{staticcontents*}
+
+\begin{staticcontents*}{author}
+\authorspecs
+Chin Boot Strap\\
+\end{staticcontents*}
+
+\begin{staticcontents*}{date}
+ \datespecs
+ 10/24/22
+% \rotatebox{90}{}
+\end{staticcontents*} % end-flip
+
+\begin{staticcontents*}{image}
+ \imagespecs
+
+\includegraphics[width=32.9mm,height=40.9mm]{image.png}
+
+\end{staticcontents*} % end-image
+
+\begin{staticcontents*}{contact}
+ \contactspecs
+
+penguin@random.aq\\
+Penguin Heights, North Antarctica
+
+\end{staticcontents*} % end-contact
+
+\end{document}

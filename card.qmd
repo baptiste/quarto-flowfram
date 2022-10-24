@@ -1,0 +1,30 @@
+---
+title: "penguin sliding"
+subtitle: "a card not from a random house" 
+author:   
+  - "Chin Boot Strap"  
+date: today
+format:
+  pdf:
+    template: _template.tex
+    keep-tex: true
+flowfram: final
+filters:
+   - frame.lua
+environments: [image,contact]
+---
+
+```{r setup, include=FALSE}
+source('_get-layout.R') # grab frame size information
+```
+
+::: image
+![picture of a penguin](image.png){width="`r img$width`mm" height="`r img$height`mm"}
+:::
+
+
+::: contact
+penguin@random.aq      
+Penguin Heights, North Antarctica 
+:::
+

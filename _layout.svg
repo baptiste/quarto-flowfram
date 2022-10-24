@@ -1,0 +1,12 @@
+<svg width="91" height="55" viewBox="0 0 91 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="91" height="55" fill="#F5F5F5"/>
+<g id="_layout">
+<rect width="91" height="55" fill="white"/>
+<rect id="image" x="3.05" y="3.05" width="32.9" height="40.9" fill="#D9D9D9" stroke="black" stroke-width="0.1"/>
+<rect id="title" x="37.05" y="29.05" width="41.9" height="6.9" fill="#D9D9D9" stroke="black" stroke-width="0.1"/>
+<rect id="author" x="37.05" y="3.05" width="41.9" height="6.9" fill="#D9D9D9" stroke="black" stroke-width="0.1"/>
+<rect id="subtitle" x="37.05" y="36.05" width="49.9" height="3.9" fill="#D9D9D9" stroke="black" stroke-width="0.1"/>
+<rect id="date" x="83.05" y="34.95" width="31.9" height="3.9" transform="rotate(-90 83.05 34.95)" fill="#D9D9D9" stroke="black" stroke-width="0.1"/>
+<rect id="contact" x="37.05" y="44.05" width="49.9" height="7.9" fill="#D9D9D9" stroke="black" stroke-width="0.1"/>
+</g>
+</svg>
